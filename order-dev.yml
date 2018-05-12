@@ -36,8 +36,8 @@ eureka:
 #  ribbon:
 #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 env:
-  dev
+  dev1
 
 author:
   name: Mr.Dong
-  age: 26
+  age: 27

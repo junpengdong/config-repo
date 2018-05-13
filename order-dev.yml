@@ -25,6 +25,14 @@ spring:
     port: 5672
     username: guest
     password: guest
+  cloud:
+    #配置Spring Cloud Stream 分组
+    stream:
+      bindings:
+        myMessage:
+          group: order
+          #配置rabbitmq 控制台显示Queue对象信息为json字符串
+          content-type: application/json
 
 eureka:
   client:

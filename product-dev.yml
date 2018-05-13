@@ -1,0 +1,32 @@
+spring:
+  # database
+  datasource:
+      url: jdbc:mysql://localhost:3306/SpringCloud_Sell?useUnicode=true&characterEncoding=utf8&useSSL=false
+      username: root
+      password:
+      driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database: MYSQL
+    # Show or not log for each sql query
+    show-sql: true
+    # Hibernate ddl auto (create, create-drop, update)
+    hibernate:
+      ddl-auto: update
+      # Naming strategy
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+  # default InnoDB engine
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  application:
+    name: product
+  rabbitmq:
+    host: 43.226.35.91
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

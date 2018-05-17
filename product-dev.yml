@@ -30,7 +30,7 @@ spring:
     stream:
       bindings:
         myMessage:
-          group: order
+          group: product
           #配置rabbitmq 控制台显示Queue对象信息为json字符串
           content-type: application/json
 

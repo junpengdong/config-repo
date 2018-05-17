@@ -49,7 +49,6 @@ eureka:
   instance:
     prefer-ip-address: true
     
-
 #自定义ribbon负载均衡规则
 #PRODUCT: #调用的服务名称
 #  ribbon:

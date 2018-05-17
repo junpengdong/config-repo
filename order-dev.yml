@@ -36,6 +36,11 @@ spring:
   redis:
     host: 43.226.35.91
     port: 6379
+  zipkin:
+    base-url: http://43.226.35.91:9411/
+  sleuth:
+    sampler:
+      percentage: 1
 
 eureka:
   client:
@@ -43,7 +48,15 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true
+    
+feign:
+  hystrix:
+    enabled: true
 
+management:
+  server:
+    servlet:
+      context-path: /
 #自定义ribbon负载均衡规则
 #PRODUCT: #调用的服务名称
 #  ribbon:

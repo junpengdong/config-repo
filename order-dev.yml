@@ -48,6 +48,15 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true
+
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  server:
+    servlet:
+      context-path: /
     
 #自定义ribbon负载均衡规则
 #PRODUCT: #调用的服务名称
